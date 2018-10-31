@@ -19,16 +19,16 @@ Writeup about this project
 ---
 
 
-#H1 1. The pipeline:
+**1. The pipeline:** <br />
     The Pipeline in this project depends on draw_lines() Function, which is the essential part and ultimate goal of the project.
 This  function draws `lines` with `color` and `thickness`. Lines are drawn on the image inplace (mutates the image). Basically, we take the test images provided by Udacity, then we simpaly show them in Masked, formatted with Hough Lines and combine everything to show detected Lane lines on those images. Once that part is take care of, we use the two provided videos solidWhiteRight.mp4 and solidYellowLeft.mp4 and use our pipeline to draw lines on the video.
 
-2. Shortcomings
+**2. Shortcomings** <br />
     This is a simple lane detection pipeline, and as such it has a number of potential shortcomings.
 First, since we are fitting lines (not curves) to the lane lines, this pipeline may yield poor results on urban roads with sharp turns.  Second, it may struggle when there are signs in the road, such as arrows, crosswalks, or or words (e.g., "do not block"). It may also  struggle when there are double lane lines (i.e., "do not cross" lines). This pipeline may not be robust to different lighting. Finally, it  would probably have difficulty when there are a lot of cars on the road and the lane lines cannot be seen 100+ feet in front of the car.
 
-3.Possible improvements
-    To more accurately detect the lane lines, it would be beneficial to fit a nonlinear curve to the lanes (such as a spline), instead of fitting a line.
+**3.Possible improvements** <br />
+    To more accurately detect the lane lines, it would be beneficial to fit a nonlinear curve to the lanes (such as a spline), instead of fitting a line. <br />
 
 One issue that can be seen in the videos is that the lane lines sometimes jump around. To obtain smoother results, we could incorporate information from the previous frame(s) when detecting lanes in the current frame.
 
@@ -54,7 +54,3 @@ Jupyter is an Ipython notebook where you can run blocks of code and see results 
 A browser window will appear showing the contents of the current directory.  Click on the file called "P1.ipynb".  Another browser window will appear displaying the notebook.  Follow the instructions in the notebook to complete the project.  
 
 **Step 3:** Complete the project and submit both the Ipython notebook and the project writeup
-
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
-
