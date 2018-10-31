@@ -17,19 +17,23 @@ To meet specifications in the project, take a look at the requirements in the [p
 
 Creating a Great Writeup
 ---
-For this project, a great writeup should provide a detailed response to the "Reflection" section of the [project rubric](https://review.udacity.com/#!/rubrics/322/view). There are three parts to the reflection:
 
-1. Describe the pipeline
 
-2. Identify any shortcomings
+1. The pipeline
+    The Pipeline in this project depends on draw_lines() Function, which is the essential part and ultimate goal of the project.
+This  function draws `lines` with `color` and `thickness`. Lines are drawn on the image inplace (mutates the image). Basically, we take the test images provided by Udacity, then we simpaly show them in Masked, formatted with Hough Lines and combine everything to show detected Lane lines on those images. Once that part is take care of, we use the two provided videos solidWhiteRight.mp4 and solidYellowLeft.mp4 and use our pipeline to draw lines on the video.
 
-3. Suggest possible improvements
+2. Shortcomings
+    This is a simple lane detection pipeline, and as such it has a number of potential shortcomings.
+First, since we are fitting lines (not curves) to the lane lines, this pipeline may yield poor results on urban roads with sharp turns.  Second, it may struggle when there are signs in the road, such as arrows, crosswalks, or or words (e.g., "do not block"). It may also  struggle when there are double lane lines (i.e., "do not cross" lines). This pipeline may not be robust to different lighting. Finally, it  would probably have difficulty when there are a lot of cars on the road and the lane lines cannot be seen 100+ feet in front of the car.
 
-We encourage using images in your writeup to demonstrate how your pipeline works.  
+3.Possible improvements
+    To more accurately detect the lane lines, it would be beneficial to fit a nonlinear curve to the lanes (such as a spline), instead of fitting a line.
 
-All that said, please be concise!  We're not looking for you to write a book here: just a brief description.
+One issue that can be seen in the videos is that the lane lines sometimes jump around. To obtain smoother results, we could incorporate information from the previous frame(s) when detecting lanes in the current frame.
 
-You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup. Here is a link to a [writeup template file](https://github.com/udacity/CarND-LaneLines-P1/blob/master/writeup_template.md). 
+The Shortcomings and improvements ideas are inspired from the work of: 
+[Jeff Irion](https://jefflirion.github.io/udacity_car_nanodegree_project01/index.html)
 
 
 The Project
