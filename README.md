@@ -15,11 +15,11 @@ To complete the project, two files will be submitted: a file containing project 
 To meet specifications in the project, take a look at the requirements in the [project rubric](https://review.udacity.com/#!/rubrics/322/view)
 
 
-Creating a Great Writeup
+Writeup about this project
 ---
 
 
-1. The pipeline
+#H1 1. The pipeline:
     The Pipeline in this project depends on draw_lines() Function, which is the essential part and ultimate goal of the project.
 This  function draws `lines` with `color` and `thickness`. Lines are drawn on the image inplace (mutates the image). Basically, we take the test images provided by Udacity, then we simpaly show them in Masked, formatted with Hough Lines and combine everything to show detected Lane lines on those images. Once that part is take care of, we use the two provided videos solidWhiteRight.mp4 and solidYellowLeft.mp4 and use our pipeline to draw lines on the video.
 
