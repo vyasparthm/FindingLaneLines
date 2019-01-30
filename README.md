@@ -36,6 +36,8 @@ The Shortcomings and improvements ideas are inspired from the work of:
 [Jeff Irion](https://jefflirion.github.io/udacity_car_nanodegree_project01/index.html)
 
 
+My videos: [solidWhiteRight](https://youtu.be/oT6S0T_-TxM) ,[solidYellowLeft](https://www.youtube.com/watch?v=Ogz2svssDq0&feature=youtu.be) and [Challange Video](https://www.youtube.com/watch?v=fxemQHFgNT4&feature=youtu.be)
+
 The Project
 ---
 
